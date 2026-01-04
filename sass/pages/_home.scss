@@ -1,0 +1,33 @@
+header {
+    padding: 1% 5%;
+    font-family: $body-font;
+    font-weight: 700;
+    font-size: 12px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    align-items: center;
+    justify-content: space-between;
+
+    .toggle-menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        gap: 1vw;
+        align-items: center;
+
+        a {
+            color:rgba(46, 43, 43, 0.87);
+             text-decoration: none;
+            img {
+                width: 3vw;
+            }
+        }
+
+        .navbar {
+            gap: 1vw;
+            display: flex;
+            list-style: none;
+        }
+    }
+}

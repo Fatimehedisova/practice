@@ -1,1 +1,35 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 1% 5%;
+  font-family: "Montserrat", "serif";
+  font-weight: 700;
+  font-size: 12px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  align-items: center;
+  justify-content: space-between;
+}
+header .toggle-menu {
+  display: none;
+}
+header nav {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+header nav a {
+  color: rgba(46, 43, 43, 0.87);
+  text-decoration: none;
+}
+header nav a img {
+  width: 3vw;
+}
+header nav .navbar {
+  gap: 1vw;
+  display: flex;
+  list-style: none;
+}/*# sourceMappingURL=main.css.map */
