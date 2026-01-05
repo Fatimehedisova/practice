@@ -5,10 +5,12 @@
 }
 
 header {
-  padding: 1% 5%;
+  padding: 1rem 2.5rem;
+  width: 100%;
+  position: fixed;
   font-family: "Montserrat", "serif";
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.8em;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   align-items: center;
   justify-content: space-between;
@@ -17,19 +19,36 @@ header .toggle-menu {
   display: none;
 }
 header nav {
+  width: 100%;
   display: flex;
-  gap: 1vw;
+  gap: 16px;
   align-items: center;
 }
-header nav a {
-  color: rgba(46, 43, 43, 0.87);
-  text-decoration: none;
-}
-header nav a img {
-  width: 3vw;
+header nav img {
+  width: 50px;
 }
 header nav .navbar {
   gap: 1vw;
   display: flex;
   list-style: none;
+}
+header nav .navbar a {
+  letter-spacing: 0.3mm;
+  color: rgba(46, 43, 43, 0.87);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  header nav .toggle-menu {
+    display: flex;
+    position: absolute;
+    right: 2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    cursor: pointer;
+  }
+  header .navbar a {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
