@@ -1,13 +1,16 @@
 header {
     padding: 1rem 2.5rem;
     width: 100%;
-    position: fixed;
+    position: sticky;
+    top: 0;
     font-family: $body-font;
     font-weight: 700;
     font-size: .8em;
+    z-index: 999;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
 
     .toggle-menu {
         display: none;
@@ -19,7 +22,6 @@ header {
         gap: 16px;
         align-items: center;
 
-        // justify-content: flex-start;
         img {
             width: 50px;
         }
@@ -33,11 +35,81 @@ header {
                 letter-spacing: .3mm;
                 color: rgba(46, 43, 43, 0.87);
                 text-decoration: none;
-
-
             }
 
         }
+    }
+}
+
+main {
+    .container {
+        display: flex;
+        width: 100%;
+
+        .logo-image-section {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(100% / 12 * 5);
+            height: 100vh;
+            background-color: #203a30;
+
+            img {
+                width: 35%;
+            }
+        }
+
+        .coffee-section {
+            font-family: $body-font;
+
+            .barista {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            margin-left: calc(100% / 12 * 5);
+            width: calc(100%/ 12 * 7);
+        }
+
+        .about-container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            gap: 40px;
+            flex-direction: column;
+
+            .coffee-intro {
+                .coffee-title {
+                    font-weight: 600;
+                    font-size: 16px;
+                    margin: 16px 0;
+                }
+
+                .coffee-description {
+                    font-weight: 500;
+                    line-height: 21px;
+                    font-size: 14px;
+                    
+                }
+            }
+
+            .item {
+                display: flex;
+                gap: 1.5em;
+                
+                &-title {
+                    display: flex;
+                    flex-direction: column;
+                    width: calc(100% / 12 * 6);
+                }
+
+                img {
+                    width: calc(100% / 12 * 6);
+                }
+            }
+        }
+
     }
 }
 

@@ -7,13 +7,16 @@
 header {
   padding: 1rem 2.5rem;
   width: 100%;
-  position: fixed;
+  position: sticky;
+  top: 0;
   font-family: "Montserrat", "serif";
   font-weight: 700;
   font-size: 0.8em;
+  z-index: 999;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
 }
 header .toggle-menu {
   display: none;
@@ -36,6 +39,61 @@ header nav .navbar a {
   letter-spacing: 0.3mm;
   color: rgba(46, 43, 43, 0.87);
   text-decoration: none;
+}
+
+main .container {
+  display: flex;
+  width: 100%;
+}
+main .container .logo-image-section {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41.6666666667%;
+  height: 100vh;
+  background-color: #203a30;
+}
+main .container .logo-image-section img {
+  width: 35%;
+}
+main .container .coffee-section {
+  font-family: "Montserrat", "serif";
+  margin-left: 41.6666666667%;
+  width: 58.3333333333%;
+}
+main .container .coffee-section .barista {
+  width: 100%;
+  margin-bottom: 20px;
+}
+main .container .about-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+main .container .about-container .coffee-intro .coffee-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 16px 0;
+}
+main .container .about-container .coffee-intro .coffee-description {
+  font-weight: 500;
+  line-height: 21px;
+  font-size: 14px;
+}
+main .container .about-container .item {
+  display: flex;
+  gap: 1.5em;
+}
+main .container .about-container .item-title {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+main .container .about-container .item img {
+  width: 50%;
 }
 
 @media (max-width: 768px) {
